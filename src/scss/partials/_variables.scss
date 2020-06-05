@@ -1,0 +1,63 @@
+// Colors
+///////////////////////////////////////////////
+$black: #363636;
+
+
+// Typography
+///////////////////////////////////////////////
+$body-font: 'Muli', sans-serif;
+$heading-font: $body-font;
+
+$text-color: $black;
+$link-color: blue;
+
+$h1: 36px; $h1-lineheight: 46px;
+$h2: 28px; $h2-lineheight: 38px;
+$h3: 24px; $h3-lineheight: 34px;
+$h4: 20px; $h4-lineheight: 30px;
+$h5: 16px; $h5-lineheight: 24px;
+$h6: 12px; $h6-lineheight: 16px;
+
+$paragraph-size: 16px;
+$paragraph-line-height: 26px;
+
+
+// Buttons
+///////////////////////////////////////////////
+$btn-height: 60px;
+$btn-stroke-width: 3px;
+
+$primary-btn-color: #555;
+$primary-btn-color-hover: tint($primary-btn-color, 40%);
+
+$btn-font-size: 14px;
+$btn-font-weight: 500;
+
+$secondary-btn-color: gray;
+$secondary-btn-color-hover: tint($secondary-btn-color, 40%);
+
+$btn-border-radius: 4px;
+$btn-timing-function: 0.2s cubic-bezier(.17,.67,.5,1);
+
+
+
+// Header
+///////////////////////////////////////////////
+$header-height: 70px;
+$header-height-mobile: 60px;
+
+
+
+// Bootstrap Breakpoints 
+///////////////////////////////////////////////
+$mq-min-xl: 1200px;
+$mq-min-lg: 992px;
+$mq-min-md: 768px;
+$mq-min-sm: 576px;
+$mq-min-xs: 0;
+
+$mq-max-xl: ($mq-min-xl - 1);
+$mq-max-lg: ($mq-min-lg - 1);
+$mq-max-md: ($mq-min-md - 1);
+$mq-max-sm: ($mq-min-sm - 1);
+
