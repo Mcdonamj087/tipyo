@@ -1,5 +1,5 @@
 {
-	"name": "TipYo Website",
+	"name": "tipyo_website",
 	"version": "2.0.0",
 	"description": "A website built for TipYo - a touchless tipping mobile app",
 	"main": "./dist/js/main.js",
@@ -35,5 +35,9 @@
 		"jshint": "2.11.1",
 		"jshint-stylish": "2.2.1",
 		"lazypipe": "1.0.2"
+	},
+	"scripts": {
+		"build": "gulp default",
+		"deploy": "npm run build && git subtree push --prefix dist origin gh-pages"
 	}
 }
