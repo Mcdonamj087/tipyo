@@ -1,0 +1,41 @@
+// Breakpoints Mixins
+///////////////////////////////////////////////
+$mq-min-xl: 1200px;
+$mq-min-lg: 992px;
+$mq-min-md: 768px;
+$mq-min-sm: 576px;
+$mq-min-xs: 0;
+
+$breakpoint: 0;
+@mixin breakpoint($size, $max: null) {
+  @if $size == xl {
+    $breakpoint: 1200 !global;
+  }
+  @if $size == lg {
+    $breakpoint: 992 !global;
+  }
+  @if $size == md {
+    $breakpoint: 768 !global;
+  }
+  @if $size == sm {
+    $breakpoint: 576 !global;
+  }
+  
+  @if $max {
+    @media screen and (min-width: #{$breakpoint - 1}px) {
+      @content;
+    }
+  }
+  @if not $max {
+    @media screen and (min-width: #{$breakpoint}px) {
+      @content;
+    }
+  }
+
+  @if $size != xl and $size != lg and $size != md and $size != sm {
+    @error "Must choose a breakpoint named xl, lg, md, or sm";
+  }
+  @if $max != 'max' and $max != null {
+    @error "Property needs a variable of 'max'";
+  }
+}
