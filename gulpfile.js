@@ -40,22 +40,8 @@ var paths = {
 		output: 'dist/svg/'
 	},
 	copy: {
-		css: {
-			input: 'src/copy/css/**/*',
-			output: 'dist/css/'
-		},
-		js: {
-			input: 'src/copy/plugins/**/*',
-			output: 'dist/js/plugins/'
-		},
-		fonts: {
-			input: 'src/copy/fonts/**/*',
-			output: 'dist/fonts/'
-		}, 
-		images: {
-			input: 'src/copy/images/**/*',
-			output: 'dist/images/'
-		}
+		input: 'src/copy/**/*',
+		output: 'dist/'		
 	},
 	reload: './dist/'
 };
@@ -269,54 +255,16 @@ var buildSVGs = function (done) {
 };
 
 // Copy static CSS files into output folder
-var copyCSS = function (done) {
+var copy = function (done) {
 
 	// Make sure this feature is activated before running
 	if (!settings.copy) return done();
 
 	// Copy CSS files
-	return src(paths.copy.css.input)
-		.pipe(dest(paths.copy.css.output));
+	return src(paths.copy.input)
+		.pipe(dest(paths.copy.output));
 
 };
-
-// Copy static JS files into output folder
-var copyJS = function (done) {
-
-	// Make sure this feature is activated before running
-	if (!settings.copy) return done();
-
-	// Copy JS files
-	return src(paths.copy.js.input)
-		.pipe(dest(paths.copy.js.output));
-
-};
-
-// Copy font files into output folder
-var copyFonts = function (done) {
-
-	// Make sure this feature is activated before running
-	if (!settings.copy) return done();
-
-	// Copy Font files
-	return src(paths.copy.fonts.input)
-		.pipe(dest(paths.copy.fonts.output));
-
-};
-
-// Copy images into output folder
-var copyImages = function (done) {
-
-	// Make sure this feature is activated before running
-	if (!settings.copy) return done();
-
-	// Copy Image files
-	return src(paths.copy.images.input)
-		.pipe(dest(paths.copy.images.output));
-
-};
-
-
 
 // Watch for changes to the src directory
 var startServer = function (done) {
@@ -355,15 +303,6 @@ var watchSource = function (done) {
  * Export Tasks
  */
 
-// Copy Task
-// gulp copy
-exports.copy = series(
-	copyCSS,
-	copyJS,
-	copyFonts,
-	copyImages
-);
-
 // Default task
 // gulp
 exports.default = series(
@@ -374,7 +313,7 @@ exports.default = series(
 		lintScripts,
 		buildStyles,
 		buildSVGs,
-		exports.copy
+		copy
 	)
 );
 

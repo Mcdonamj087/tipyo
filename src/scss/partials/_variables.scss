@@ -1,49 +1,32 @@
 // Colors
 ///////////////////////////////////////////////
-$black: #363636;
+$black: #231F20;
+$shadow-black: #1A1200;
 
+$green: #00BC70;
+$red: #EB5541;
+$white-sand: #FAF9F8;
+$tan: #F4F3F0;
+$dark-tan: #D6D1C4;
 
-// Typography
+$green-gradient: rgba(0, 188, 112, .27), rgba(116, 235, 86, .27);
+$blue-gradient: rgba(8, 134, 205, .27), rgba(86, 226, 235, .27);
+$orange-gradient: rgba(205, 102, 8, .27), rgba(235, 175, 86, .27);
+
+// Type
 ///////////////////////////////////////////////
-$body-font: 'Muli', sans-serif;
-$heading-font: $body-font;
-
-$text-color: $black;
-$link-color: blue;
-
-$h1: 36px; $h1-lineheight: 46px;
-$h2: 28px; $h2-lineheight: 38px;
-$h3: 24px; $h3-lineheight: 34px;
-$h4: 20px; $h4-lineheight: 30px;
-$h5: 16px; $h5-lineheight: 24px;
-$h6: 12px; $h6-lineheight: 16px;
-
-$paragraph-size: 16px;
-$paragraph-line-height: 26px;
-
+$body-font: 'Lato', 'Helvetica', 'Arial', sans-serif;
+$heading-font: 'Qanelas Soft', sans-serif; 
 
 // Buttons
 ///////////////////////////////////////////////
-$btn-height: 60px;
-$btn-stroke-width: 3px;
-
-$primary-btn-color: #555;
-$primary-btn-color-hover: tint($primary-btn-color, 40%);
-
-$btn-font-size: 14px;
-$btn-font-weight: 500;
-
-$secondary-btn-color: gray;
-$secondary-btn-color-hover: tint($secondary-btn-color, 40%);
-
-$btn-border-radius: 4px;
 $btn-timing-function: 0.2s cubic-bezier(.17,.67,.5,1);
 
 
 
 // Header
 ///////////////////////////////////////////////
-$header-height: 70px;
+$header-height: 80px;
 $header-height-mobile: 60px;
 
 

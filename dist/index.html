@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Page Title</title>
+	<title>TipYo</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="">
+	<meta name="description" content="A secure mobile payment solution that enables travelers to express their gratitude to hotel room attendants, concierge and valets.">
 	<!-- https://realfavicongenerator.net/ -->
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-	<link rel="manifest" href="/site.webmanifest">
-	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+	<link rel="manifest" href="favicons/site.webmanifest">
+	<link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="msapplication-TileColor" content="#2b5797">
 	<meta name="theme-color" content="#ffffff">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<!-- end favicons -->
 </head>
 <body>
 
@@ -24,13 +25,54 @@
 
 <!-- Begin Global Header -->
 <header>
-  Global header
+  <div class="logo">
+    <a href="/">
+      <img src="svg/tipyo-logo-green.svg" alt="TipYo Logo">
+    </a>
+  </div>
+  <nav class="main-nav">
+    <div class="main-nav-item">
+      <a href="#">Home</a>
+    </div>
+    <div class="main-nav-item has-sub">
+      <a href="javascript:void(0)">How it Works <span><svg width="8" height="5" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1l3 3 3-3" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+      <nav class="sub-nav">
+        <a href="#">For Travelers</a>
+        <a href="#">For Hospitality Companies</a>
+      </nav>
+    </div>
+    <div class="main-nav-item">
+      <a href="#">Press</a>
+    </div>
+    <div class="main-nav-item">
+      <a href="#">Blog</a>
+    </div>
+    <div class="main-nav-item">
+      <a href="#">Contact Us</a>
+    </div>
+  </nav>
+  <div class="app-store-btns">
+    <a href="#" title="App Store">
+      <img src="svg/appstore-badge.svg" alt="Download TipYo on Apple App Store">
+    </a>
+    <a href="#" title="Google Play Store">
+      <img src="svg/google-play-badge.svg" alt="Download TipYo on Apple App Store">
+    </a>
+  </div>
+  <div id="mobile-nav-trigger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
 </header>
+
+<!-- End Global Header -->
 
 <section>
 	<div class="container">
 		<div class="row">
 			<div class="col-6">
+				<h1 class="display">Touchless Tipping</h1>
 				<h1>My Dope Project</h1>
 				<h2>Heading 2</h2>
 				<h3>Heading 3</h3>
@@ -50,13 +92,45 @@
 
 <!-- Begin Global Footer -->
 <footer>
-  Global Footer
+  <div class="logo-and-links">
+    <a href="/" title="TipYo Home">
+      <img class="logo" src="svg/tipyo-logo-green.svg">
+    </a>
+    <div>
+      <p>©Copyright TipYo 2020. All Rights Reserved.</p>
+      <p><a href="/privacy-policy/">Privacy Policy</a> | <a href="/terms-of-use/">Terms of Use</a> | <a href="/customer-terms-conditions/">Customer Terms &amp; Conditions</a></p>
+    </div>
+  </div>
+  <div class="cta-wrap">
+    <div class="social-icons">
+      <a href="https://twitter.com/tipyo_" title="Twitter" target="_blank">
+        <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M25.575 9.79a7.977 7.977 0 01-1.909 1.968 10.815 10.815 0 01-.436 3.559 11.054 11.054 0 01-1.361 2.93 11.512 11.512 0 01-2.175 2.48 9.68 9.68 0 01-3.041 1.721c-1.222.434-2.51.651-3.807.642A10.571 10.571 0 017 21.375c.305.033.612.049.919.047a7.454 7.454 0 004.726-1.626 3.815 3.815 0 01-3.559-2.64c.238.038.478.057.719.06.338-.001.674-.045 1-.13a3.746 3.746 0 01-2.186-1.315 3.678 3.678 0 01-.866-2.422v-.05a3.777 3.777 0 001.721.482 3.8 3.8 0 01-1.697-3.23c.01-.655.189-1.295.518-1.86a10.792 10.792 0 003.471 2.81 10.608 10.608 0 004.379 1.173 4.225 4.225 0 01-.094-.872 3.812 3.812 0 016.589-2.6 7.462 7.462 0 002.416-.919 3.7 3.7 0 01-1.674 2.1 7.584 7.584 0 002.193-.593z" fill="#fff"/></svg>
+      </a>
+      <a href="https://www.instagram.com/tip.yo/" title="Instagram" target="_blank">
+        <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.333 16c0-.92-.325-1.706-.976-2.357A3.212 3.212 0 0016 12.667c-.92 0-1.706.325-2.357.976A3.212 3.212 0 0012.667 16c0 .92.325 1.706.976 2.357a3.212 3.212 0 002.357.976c.92 0 1.706-.325 2.357-.976A3.212 3.212 0 0019.333 16zm1.797 0c0 1.424-.499 2.634-1.497 3.633-.998.998-2.21 1.497-3.633 1.497-1.424 0-2.634-.499-3.633-1.497-.998-.998-1.497-2.21-1.497-3.633 0-1.424.499-2.634 1.497-3.633.998-.998 2.21-1.497 3.633-1.497 1.424 0 2.634.499 3.633 1.497.998.998 1.497 2.21 1.497 3.633zm1.407-5.338c0 .33-.118.611-.352.846a1.154 1.154 0 01-.846.351c-.33 0-.612-.117-.847-.351a1.154 1.154 0 01-.351-.846c0-.33.117-.613.351-.847.235-.234.517-.351.846-.351.33 0 .613.117.847.351.234.235.352.517.352.847zM16 7.796l-.996-.007a70.642 70.642 0 00-1.374 0c-.312.005-.731.018-1.256.04-.526.021-.973.065-1.341.13-.37.065-.68.145-.931.24a3.378 3.378 0 00-1.146.756c-.33.33-.582.712-.755 1.146a5.218 5.218 0 00-.241.93c-.065.37-.109.816-.13 1.342-.022.525-.035.944-.04 1.256-.004.313-.004.77 0 1.374l.007.996-.007.996a70.642 70.642 0 000 1.374c.005.312.018.731.04 1.256.021.525.065.973.13 1.341.065.37.145.68.24.931.174.434.426.816.756 1.146.33.33.712.582 1.146.755.251.096.562.176.93.241.37.066.816.109 1.342.13.525.022.944.035 1.256.04.313.004.77.004 1.374 0l.996-.007.996.007a69.68 69.68 0 001.374 0 48.02 48.02 0 001.256-.04c.525-.021.973-.065 1.341-.13.37-.065.68-.145.931-.24a3.379 3.379 0 001.146-.756c.33-.33.582-.712.755-1.146.096-.251.176-.562.241-.93.066-.37.109-.817.13-1.342.022-.525.035-.944.04-1.256.004-.313.004-.77 0-1.374L24.203 16l.007-.996a69.68 69.68 0 000-1.374 48.02 48.02 0 00-.04-1.256 10.318 10.318 0 00-.13-1.341 5.217 5.217 0 00-.24-.931 3.379 3.379 0 00-.756-1.146 3.378 3.378 0 00-1.146-.755 5.218 5.218 0 00-.93-.241 10.316 10.316 0 00-1.342-.13 48.252 48.252 0 00-1.256-.04c-.313-.004-.77-.004-1.374 0L16 7.797zM26 16c0 1.988-.022 3.364-.065 4.128-.087 1.805-.625 3.203-1.615 4.192-.99.99-2.387 1.528-4.192 1.615-.764.043-2.14.065-4.128.065s-3.364-.022-4.128-.065c-1.805-.087-3.203-.625-4.192-1.615-.99-.99-1.528-2.387-1.615-4.192C6.022 19.364 6 17.988 6 16s.022-3.364.065-4.128c.087-1.805.625-3.203 1.615-4.192.99-.99 2.387-1.528 4.192-1.615C12.636 6.022 14.012 6 16 6s3.364.022 4.128.065c1.805.087 3.203.625 4.192 1.615.99.99 1.528 2.387 1.615 4.192.043.764.065 2.14.065 4.128z" fill="#fff"/></svg>
+      </a>
+      <a href="https://www.facebook.com/tipsmatter" title="Facebook" target="_blank">
+        <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.183 5.146v3.112h-1.85a1.732 1.732 0 00-1.367.424c-.262.37-.388.82-.354 1.273v2.228h3.453l-.46 3.49h-2.994v8.945h-3.607v-8.947H11v-3.488h3.005v-2.57a4.56 4.56 0 011.226-3.4A4.449 4.449 0 0118.5 5.005a19.5 19.5 0 012.683.141z" fill="#fff"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/company/tipyo/" title="Linkedin" target="_blank">
+        <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.248 24.108h4.068V11.889H7.248v12.219zm4.332-15.99a2.08 2.08 0 00-.634-1.516 2.25 2.25 0 00-1.638-.6 2.344 2.344 0 00-1.664.6A1.98 1.98 0 007 8.117a2.015 2.015 0 00.625 1.507 2.24 2.24 0 001.629.607h.018a2.317 2.317 0 001.673-.607 1.999 1.999 0 00.634-1.503v-.004zm10.3 15.99h4.068v-7.01a5.848 5.848 0 00-1.286-4.1 4.408 4.408 0 00-3.4-1.39 4.094 4.094 0 00-3.681 2.06h.035v-1.78h-4.068c.035.775.035 4.85 0 12.223h4.068v-6.834a2.917 2.917 0 01.123-.986 2.72 2.72 0 01.793-1.048c.369-.292.83-.445 1.3-.43 1.362 0 2.043.921 2.043 2.765l.005 6.53z" fill="#fff"/></svg>
+      </a>
+    </div>
+    <div class="app-store-btns">
+      <a href="https://apps.apple.com/us/app/tipyo-mobile-tipping/id1436410832" target="_blank" title="Download on the App Store">
+        <img src="svg/appstore-badge-white.svg" alt="Download on the App Store">
+      </a>
+      <a href="https://apps.apple.com/us/app/tipyo-mobile-tipping/id1436410832" target="_blank" title="Download on the Google Play Store">
+        <img src="svg/google-play-badge-white.svg" alt="Download on the Google Play Store">
+      </a>
+    </div>
+  </div>
 </footer>
 	
 
 
 </div> <!-- ends 'wrapper' div -->
 
-	<script type="text/javascript" src="/js/main.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

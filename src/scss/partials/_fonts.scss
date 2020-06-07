@@ -2,33 +2,27 @@
  Fonts
 **********************************************/
 @font-face {
-    font-family: 'Muli';
-    src: url('../fonts/Muli/Muli-Light.woff2') format('woff2'),
-        url('../fonts/Muli/Muli-Light.woff') format('woff');
-    font-weight: 300;
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Regular.woff2') format('woff2'),
+        url('../fonts/Lato-Regular.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Muli';
-    src: url('../fonts/Muli/Muli-Bold.woff2') format('woff2'),
-        url('../fonts/Muli/Muli-Bold.woff') format('woff');
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Bold.woff2') format('woff2'),
+        url('../fonts/Lato-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Muli';
-    src: url('../fonts/Muli/Muli-SemiBold.woff2') format('woff2'),
-        url('../fonts/Muli/Muli-SemiBold.woff') format('woff');
-    font-weight: 600;
+    font-family: 'Qanelas Soft';
+    src: url('../fonts/QanelasSoft-ExtraBold.woff2') format('woff2'),
+        url('../fonts/QanelasSoft-ExtraBold.woff') format('woff');
+    font-weight: bold;
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'Muli';
-    src: url('../fonts/Muli/Muli-Regular.woff2') format('woff2'),
-        url('../fonts/Muli/Muli-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+

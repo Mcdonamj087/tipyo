@@ -3,11 +3,162 @@
 **********************************************/
 
 footer {
-	width: 100%;
-	background: $black;
-	color: #fff;
-	height: 300px;
+  background: $black;
+  padding: 60px 30px;
+  position: relative;
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	flex-direction: column;
+	justify-content: space-around;
+	text-align: center;
+
+	@include breakpoint(lg) {
+		justify-content: space-between;
+		align-items: center;
+		text-align: left;
+		flex-direction: row;
+	}
+	
+	@include breakpoint(xl) {
+		padding: 45px 30px;
+		
+	}
+
+	p {
+		margin: 0;
+		color: $dark-tan;
+	}
+
+	a {
+		opacity: 1;
+		transition: opacity .2s ease-out;
+		text-decoration: none;
+		
+		&:hover {
+			opacity: .75;
+		}
+	}
+
+	.logo-and-links {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		margin-bottom: 30px;
+	
+		@include breakpoint(lg) {
+			align-items: flex-start;
+			margin: 0;
+		}
+
+		@include breakpoint(xl) {
+			flex-direction: row;
+		}
+	}
+	
+	.logo {
+		height: 50px;
+		margin-bottom: 30px;
+		
+		@include breakpoint(lg) {
+			margin-bottom: 10px;
+		}
+
+		@include breakpoint(xl) {
+			margin-right: 30px;
+			margin-bottom: 0;
+		}
+	}
+	
+	.cta-wrap {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+
+		@include breakpoint(lg) {
+			align-items: flex-end;
+			
+		}
+	
+		@include breakpoint(xl) {
+			flex-direction: row;
+		}
+		
+		.app-store-btns {
+			margin-top: 20px;
+			display: flex;
+	
+			@include breakpoint(lg) {
+				margin-left: 40px;
+				margin-top: 0;
+			}
+
+			a {
+				font-size: 0;
+	
+				&:first-child {
+					margin-right: 12px;
+				}
+			}
+		}
+	}
+
+	.social-icons {
+
+		@include breakpoint(lg) {
+			margin-bottom: 20px;
+		}
+
+		@include breakpoint(xl) {
+			margin-bottom: 0;
+		}
+
+		a {
+			display: inline-block;
+			font-size: 0;
+			
+			&:not(:first-child) {
+				margin-left: 10px;
+			}
+		}
+	}	
 }
+
+
+
+
+
+
+#scroll-to-top {
+	width: 40px;
+	height: 40px;
+	background: rgba($black, 40%);
+	position: fixed;	
+	right: 20px;
+	bottom: 20px;
+	border-radius: 50%;
+	transition: .2s ease-out;
+	cursor: pointer;
+	opacity: 0;
+	
+	&:before {
+		content: '';
+		display: block;
+		width: 10px;
+		height: 10px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -28%) rotate(45deg);
+		border-top: 2px solid #fff;
+		border-left: 2px solid #fff;
+		pointer-events: none;
+	}
+	
+	&:hover {
+		background: rgba(35, 31, 32, 1);
+	}
+	
+	&.visible {
+		opacity: 1;
+	}
+}
+
