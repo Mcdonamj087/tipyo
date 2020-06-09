@@ -1,8 +1,12 @@
+// Globals
 @import '../../node_modules/bourbon/core/bourbon';
 @import 'partials/reset';
 @import 'partials/variables';
 @import 'mixins/breakpoints';
 @import 'partials/fonts';
 @import 'partials/global';
+
+// Components
 @import 'partials/header';
 @import 'partials/footer';
+@import 'partials/homepage-hero';

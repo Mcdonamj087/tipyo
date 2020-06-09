@@ -4,27 +4,42 @@
 
 {% include "partials/header.html" %}
 
-<section>
+<section class="homepage-hero section-top-padding">
 	<div class="container">
 		<div class="row">
-			<div class="col-6">
-				<h1 class="display">Touchless Tipping</h1>
-				<h1>{{ name }}</h1>
-				<h2>Heading 2</h2>
-				<h3>Heading 3</h3>
-				<h4>Heading 4</h4>
-				<h5>Heading 5</h5>
-				<h6>Heading 6</h6>
-				
-				<a href="#" class="btn">Primary Button</a>
-				<a href="#" class="btn btn-secondary">Secondary Button</a>
-				<a href="#" class="btn stroke">Primary Button</a>
-				<a href="#" class="btn btn-secondary stroke">Secondary Button</a>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro accusantium, delectus quae corporis quasi nemo architecto tenetur hic possimus. <a href="">error</a> nobis saepe ab voluptatem id dignissimos voluptatum, animi dolores.</p>
+			<div class="col">
+
+				<div class="homepage-hero--content">
+					<h1 class="headline display">Touchless Tipping</h1>
+					<p class="largest">TipYo is a secure mobile tipping solution partnering with hospitality companies to enable travelers to safely express their gratitude to service staff while practicing physical distancing.</p>
+				</div>
+
+				<div class="homepage-hero--industry-cards">
+					<div class="card flex-center" style="background-image: linear-gradient(rgba(35, 31, 32, .5), rgba(35, 31, 32, .5)), url('images/housekeeper-cleaning-hotel-room.jpg')">
+						<div class="card-content">
+							<h6 class="for">For</h6>
+							<h2 class="headline">Hospitality Companies</h2>
+							<p class="large subhead">TipYo provides a mobile tipping solution for your guests and an affordable human resource benefit for your staff.</p>
+							<a class="btn" href="hospitality-companies.html">Learn More</a>
+						</div>
+					</div>
+
+					<div class="card flex-center" style="background-image: linear-gradient(rgba(35, 31, 32, .5), rgba(35, 31, 32, .5)), url('images/man-and-woman-riding-vespa.jpg')">
+						<div class="card-content">
+							<h6 class="for">For</h6>
+							<h2 class="headline">Travelers</h2>
+							<p class="large subhead">The TipYo App enables you to securely tip staff at participating locations.</p>
+							<a class="btn" href="travelers.html">Learn More</a>
+						</div>
+					</div>
+				</div>
+
 			</div>
 		</div>
 	</div>	
 </section>
+
+<div style="height: 1000px"></div>
 
 {% include "partials/footer.html" %}
 	

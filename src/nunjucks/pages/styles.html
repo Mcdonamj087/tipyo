@@ -1,0 +1,40 @@
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+
+{% include "partials/header.html" %}
+
+<section class="section-padding">
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1 class="display">H1 Display is for oversized hero headlines.</h1>
+				<h1>H1 is a top level heading.</h1>
+				<h2>H2 is a second level heading.</h2>
+				<h3>H3 is a third level heading.</h3>
+				<h4>H4 is a fourth level heading.</h4>
+				<h5>H5 is a fifth level heading.</h5>
+				<h6>H6 is a sixth level heading.</h6>
+				
+				<a href="#" class="btn">Primary Button</a>
+				<a href="#" class="btn btn-secondary">Secondary Button</a>
+
+				<h6>Paragraph Largest</h6>
+				<p class="largest">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro accusantium, delectus quae corporis quasi nemo architecto tenetur hic possimus. <a href="">error</a> nobis saepe ab voluptatem id dignissimos voluptatum, animi dolores.</p>
+				
+				<h6>Paragraph Large</h6>
+				<p class="large">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro accusantium, delectus quae corporis quasi nemo architecto tenetur hic possimus. <a href="">error</a> nobis saepe ab voluptatem id dignissimos voluptatum, animi dolores.</p>
+				
+				<h6>Paragraph Regular</h6>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro accusantium, delectus quae corporis quasi nemo architecto tenetur hic possimus. <a href="">error</a> nobis saepe ab voluptatem id dignissimos voluptatum, animi dolores.</p>
+				
+				<h6>Paragraph Small</h6>
+				<p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro accusantium, delectus quae corporis quasi nemo architecto tenetur hic possimus. <a href="">error</a> nobis saepe ab voluptatem id dignissimos voluptatum, animi dolores.</p>
+			</div>
+		</div>
+	</div>	
+</section>
+
+{% include "partials/footer.html" %}
+	
+{% endblock %}

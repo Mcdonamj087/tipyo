@@ -1,0 +1,107 @@
+.homepage-hero {
+  background: linear-gradient(45deg, $green-gradient);
+  margin-bottom: -100px;
+}
+
+.homepage-hero--content {
+  margin-bottom: 30px;
+  text-align: center;
+
+  @include breakpoint(sm) {
+    margin-bottom: 40px;
+  }
+
+  @include breakpoint(lg) {
+    margin-bottom: 60px;
+  }
+
+  .headline {
+  
+    @include breakpoint(sm, 'max') {
+      font-size: 36px;
+    }
+  }
+}
+
+.homepage-hero--industry-cards {
+  margin-bottom: -125px;
+
+  @include breakpoint(md) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+    margin-bottom: -140px;
+  }
+
+  .card {
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    min-height: 250px;
+
+    &:last-child {
+      margin-top: 20px;
+    }
+    
+    @include breakpoint(md) {
+      height: 400px;
+      flex-basis: 48.5%;
+      padding: 0 30px;
+
+      &:last-child {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .card-content {
+    text-align: center;
+    max-width: 388px;
+
+    .for,
+    .headline,
+    .subhead {
+      color: #fff;
+    }
+
+    .for {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+
+      @include breakpoint(sm) {
+        font-size: 16px;
+      }
+    }
+
+    .headline {
+      margin-bottom: 5px;
+
+      @include breakpoint(sm) {
+        margin-bottom: 10px;
+      }
+    }
+
+    .subhead {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 0;
+      
+      @include breakpoint(sm) {
+        font-size: 18px;
+        line-height: 28px;
+      }
+
+      + .btn {
+        margin-top: 20px;
+        
+        @include breakpoint(md) {
+          margin-top: 30px;
+        }
+      }
+    }
+
+  }
+}

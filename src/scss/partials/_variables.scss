@@ -2,12 +2,11 @@
 ///////////////////////////////////////////////
 $black: #231F20;
 $shadow-black: #1A1200;
-
 $green: #00BC70;
 $red: #EB5541;
-$white-sand: #FAF9F8;
-$tan: #F4F3F0;
 $dark-tan: #D6D1C4;
+$tan: #F4F3F0;
+$white-sand: #FAF9F8;
 
 $green-gradient: rgba(0, 188, 112, .27), rgba(116, 235, 86, .27);
 $blue-gradient: rgba(8, 134, 205, .27), rgba(86, 226, 235, .27);
@@ -22,25 +21,14 @@ $heading-font: 'Qanelas Soft', sans-serif;
 ///////////////////////////////////////////////
 $btn-timing-function: 0.2s cubic-bezier(.17,.67,.5,1);
 
-
-
 // Header
 ///////////////////////////////////////////////
 $header-height: 80px;
 $header-height-mobile: 60px;
 
-
-
-// Bootstrap Breakpoints 
+// Sections
 ///////////////////////////////////////////////
-$mq-min-xl: 1200px;
-$mq-min-lg: 992px;
-$mq-min-md: 768px;
-$mq-min-sm: 576px;
-$mq-min-xs: 0;
-
-$mq-max-xl: ($mq-min-xl - 1);
-$mq-max-lg: ($mq-min-lg - 1);
-$mq-max-md: ($mq-min-md - 1);
-$mq-max-sm: ($mq-min-sm - 1);
-
+$section-padding-sm: 50px;
+$section-padding-md: 65px;
+$section-padding-lg: 85px;
+$section-padding-xl: 100px;

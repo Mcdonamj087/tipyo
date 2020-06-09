@@ -22,7 +22,7 @@ $breakpoint: 0;
   }
   
   @if $max {
-    @media screen and (min-width: #{$breakpoint - 1}px) {
+    @media screen and (max-width: #{$breakpoint - 1}px) {
       @content;
     }
   }
@@ -35,6 +35,7 @@ $breakpoint: 0;
   @if $size != xl and $size != lg and $size != md and $size != sm {
     @error "Must choose a breakpoint named xl, lg, md, or sm";
   }
+
   @if $max != 'max' and $max != null {
     @error "Property needs a variable of 'max'";
   }
