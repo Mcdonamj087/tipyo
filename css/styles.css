@@ -6,6 +6,7 @@
  * 
  */
 
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -282,6 +283,35 @@ strong, b {
 }
 
 /* line 138, src/scss/partials/_global.scss */
+ul, ol {
+  padding-left: 18px;
+}
+
+/* line 141, src/scss/partials/_global.scss */
+ul li, ol li {
+  margin-bottom: 10px;
+}
+
+/* line 148, src/scss/partials/_global.scss */
+ul li {
+  position: relative;
+}
+
+/* line 151, src/scss/partials/_global.scss */
+ul li:before {
+  content: "• ";
+  color: #00BC70;
+  position: absolute;
+  left: -20px;
+  font-size: 1.2em;
+}
+
+/* line 161, src/scss/partials/_global.scss */
+ol {
+  list-style: decimal;
+}
+
+/* line 165, src/scss/partials/_global.scss */
 .btn {
   display: inline-block;
   position: relative;
@@ -304,22 +334,32 @@ strong, b {
   white-space: nowrap;
 }
 
-/* line 159, src/scss/partials/_global.scss */
+/* line 186, src/scss/partials/_global.scss */
 .btn:hover {
   background: #00a965;
 }
 
-/* line 163, src/scss/partials/_global.scss */
+/* line 190, src/scss/partials/_global.scss */
 .btn.btn-small {
   line-height: 36px;
 }
 
-/* line 167, src/scss/partials/_global.scss */
+/* line 194, src/scss/partials/_global.scss */
 .btn + .btn {
   margin-top: 10px;
 }
 
-/* line 172, src/scss/partials/_global.scss */
+/* line 199, src/scss/partials/_global.scss */
+hr.short-rule {
+  height: 6px;
+  width: 60px;
+  margin: auto;
+  border: none;
+  background: #D6D1C4;
+  border-radius: 3px;
+}
+
+/* line 208, src/scss/partials/_global.scss */
 .chevron-arrow-right:after {
   content: '';
   display: inline-block;
@@ -331,98 +371,98 @@ strong, b {
   margin-left: 5px;
 }
 
-/* line 182, src/scss/partials/_global.scss */
+/* line 218, src/scss/partials/_global.scss */
 .wrapper {
   margin-top: 60px;
 }
 
 @media screen and (min-width: 992px) {
-  /* line 182, src/scss/partials/_global.scss */
+  /* line 218, src/scss/partials/_global.scss */
   .wrapper {
     margin-top: 80px;
   }
 }
 
-/* line 190, src/scss/partials/_global.scss */
+/* line 226, src/scss/partials/_global.scss */
 .flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* line 196, src/scss/partials/_global.scss */
+/* line 232, src/scss/partials/_global.scss */
 .section-padding {
   padding: 50px 0;
 }
 
 @media screen and (min-width: 768px) {
-  /* line 196, src/scss/partials/_global.scss */
+  /* line 232, src/scss/partials/_global.scss */
   .section-padding {
     padding: 65px 0;
   }
 }
 
 @media screen and (min-width: 992px) {
-  /* line 196, src/scss/partials/_global.scss */
+  /* line 232, src/scss/partials/_global.scss */
   .section-padding {
     padding: 85px 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  /* line 196, src/scss/partials/_global.scss */
+  /* line 232, src/scss/partials/_global.scss */
   .section-padding {
     padding: 100px 0;
   }
 }
 
-/* line 212, src/scss/partials/_global.scss */
+/* line 248, src/scss/partials/_global.scss */
 .section-top-padding {
   padding-top: 50px;
 }
 
 @media screen and (min-width: 768px) {
-  /* line 212, src/scss/partials/_global.scss */
+  /* line 248, src/scss/partials/_global.scss */
   .section-top-padding {
     padding-top: 65px;
   }
 }
 
 @media screen and (min-width: 992px) {
-  /* line 212, src/scss/partials/_global.scss */
+  /* line 248, src/scss/partials/_global.scss */
   .section-top-padding {
     padding-top: 85px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  /* line 212, src/scss/partials/_global.scss */
+  /* line 248, src/scss/partials/_global.scss */
   .section-top-padding {
     padding-top: 100px;
   }
 }
 
-/* line 228, src/scss/partials/_global.scss */
+/* line 264, src/scss/partials/_global.scss */
 .section-bottom-padding {
   padding-bottom: 50px;
 }
 
 @media screen and (min-width: 768px) {
-  /* line 228, src/scss/partials/_global.scss */
+  /* line 264, src/scss/partials/_global.scss */
   .section-bottom-padding {
     padding-bottom: 65px;
   }
 }
 
 @media screen and (min-width: 992px) {
-  /* line 228, src/scss/partials/_global.scss */
+  /* line 264, src/scss/partials/_global.scss */
   .section-bottom-padding {
     padding-bottom: 85px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  /* line 228, src/scss/partials/_global.scss */
+  /* line 264, src/scss/partials/_global.scss */
   .section-bottom-padding {
     padding-bottom: 100px;
   }
@@ -914,46 +954,48 @@ footer .social-icons a:not(:first-child) {
   opacity: 1;
 }
 
-/* line 1, src/scss/partials/_homepage-hero.scss */
+/**********************************************
+ Homepage Hero Component Styles
+**********************************************/
+/* line 5, src/scss/partials/_homepage-hero.scss */
 .homepage-hero {
   background: linear-gradient(45deg, rgba(0, 188, 112, 0.27), rgba(116, 235, 86, 0.27));
-  margin-bottom: -100px;
 }
 
-/* line 6, src/scss/partials/_homepage-hero.scss */
+/* line 9, src/scss/partials/_homepage-hero.scss */
 .homepage-hero--content {
   margin-bottom: 30px;
   text-align: center;
 }
 
 @media screen and (min-width: 576px) {
-  /* line 6, src/scss/partials/_homepage-hero.scss */
+  /* line 9, src/scss/partials/_homepage-hero.scss */
   .homepage-hero--content {
     margin-bottom: 40px;
   }
 }
 
 @media screen and (min-width: 992px) {
-  /* line 6, src/scss/partials/_homepage-hero.scss */
+  /* line 9, src/scss/partials/_homepage-hero.scss */
   .homepage-hero--content {
     margin-bottom: 60px;
   }
 }
 
 @media screen and (max-width: 575px) {
-  /* line 18, src/scss/partials/_homepage-hero.scss */
+  /* line 21, src/scss/partials/_homepage-hero.scss */
   .homepage-hero--content .headline {
     font-size: 36px;
   }
 }
 
-/* line 26, src/scss/partials/_homepage-hero.scss */
+/* line 29, src/scss/partials/_homepage-hero.scss */
 .homepage-hero--industry-cards {
   margin-bottom: -125px;
 }
 
 @media screen and (min-width: 768px) {
-  /* line 26, src/scss/partials/_homepage-hero.scss */
+  /* line 29, src/scss/partials/_homepage-hero.scss */
   .homepage-hero--industry-cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -962,7 +1004,7 @@ footer .social-icons a:not(:first-child) {
   }
 }
 
-/* line 36, src/scss/partials/_homepage-hero.scss */
+/* line 39, src/scss/partials/_homepage-hero.scss */
 .homepage-hero--industry-cards .card {
   border-radius: 20px;
   background-size: cover;
@@ -971,38 +1013,38 @@ footer .social-icons a:not(:first-child) {
   min-height: 250px;
 }
 
-/* line 43, src/scss/partials/_homepage-hero.scss */
+/* line 46, src/scss/partials/_homepage-hero.scss */
 .homepage-hero--industry-cards .card:last-child {
   margin-top: 20px;
 }
 
 @media screen and (min-width: 768px) {
-  /* line 36, src/scss/partials/_homepage-hero.scss */
+  /* line 39, src/scss/partials/_homepage-hero.scss */
   .homepage-hero--industry-cards .card {
     height: 400px;
     flex-basis: 48.5%;
     padding: 0 30px;
   }
-  /* line 52, src/scss/partials/_homepage-hero.scss */
+  /* line 55, src/scss/partials/_homepage-hero.scss */
   .homepage-hero--industry-cards .card:last-child {
     margin-top: 0;
   }
 }
 
-/* line 58, src/scss/partials/_homepage-hero.scss */
+/* line 61, src/scss/partials/_homepage-hero.scss */
 .homepage-hero--industry-cards .card-content {
   text-align: center;
   max-width: 388px;
 }
 
-/* line 62, src/scss/partials/_homepage-hero.scss */
+/* line 65, src/scss/partials/_homepage-hero.scss */
 .homepage-hero--industry-cards .card-content .for,
 .homepage-hero--industry-cards .card-content .headline,
 .homepage-hero--industry-cards .card-content .subhead {
   color: #fff;
 }
 
-/* line 68, src/scss/partials/_homepage-hero.scss */
+/* line 71, src/scss/partials/_homepage-hero.scss */
 .homepage-hero--industry-cards .card-content .for {
   font-size: 14px;
   text-transform: uppercase;
@@ -1010,25 +1052,25 @@ footer .social-icons a:not(:first-child) {
 }
 
 @media screen and (min-width: 576px) {
-  /* line 68, src/scss/partials/_homepage-hero.scss */
+  /* line 71, src/scss/partials/_homepage-hero.scss */
   .homepage-hero--industry-cards .card-content .for {
     font-size: 16px;
   }
 }
 
-/* line 78, src/scss/partials/_homepage-hero.scss */
+/* line 81, src/scss/partials/_homepage-hero.scss */
 .homepage-hero--industry-cards .card-content .headline {
   margin-bottom: 5px;
 }
 
 @media screen and (min-width: 576px) {
-  /* line 78, src/scss/partials/_homepage-hero.scss */
+  /* line 81, src/scss/partials/_homepage-hero.scss */
   .homepage-hero--industry-cards .card-content .headline {
     margin-bottom: 10px;
   }
 }
 
-/* line 86, src/scss/partials/_homepage-hero.scss */
+/* line 89, src/scss/partials/_homepage-hero.scss */
 .homepage-hero--industry-cards .card-content .subhead {
   font-weight: bold;
   font-size: 16px;
@@ -1037,21 +1079,234 @@ footer .social-icons a:not(:first-child) {
 }
 
 @media screen and (min-width: 576px) {
-  /* line 86, src/scss/partials/_homepage-hero.scss */
+  /* line 89, src/scss/partials/_homepage-hero.scss */
   .homepage-hero--industry-cards .card-content .subhead {
     font-size: 18px;
     line-height: 28px;
   }
 }
 
-/* line 97, src/scss/partials/_homepage-hero.scss */
+/* line 100, src/scss/partials/_homepage-hero.scss */
 .homepage-hero--industry-cards .card-content .subhead + .btn {
   margin-top: 20px;
 }
 
 @media screen and (min-width: 768px) {
-  /* line 97, src/scss/partials/_homepage-hero.scss */
+  /* line 100, src/scss/partials/_homepage-hero.scss */
   .homepage-hero--industry-cards .card-content .subhead + .btn {
     margin-top: 30px;
   }
+}
+
+/* line 112, src/scss/partials/_homepage-hero.scss */
+.homepage-hero--bottom-spacer {
+  height: 125px;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 112, src/scss/partials/_homepage-hero.scss */
+  .homepage-hero--bottom-spacer {
+    height: 140px;
+  }
+}
+
+/**********************************************
+ Mobile Card Switcher Component Styles
+**********************************************/
+/* line 6, src/scss/partials/_mobile-card-switcher.component.scss */
+.mobile-card-switcher .headline {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* line 11, src/scss/partials/_mobile-card-switcher.component.scss */
+.mobile-card-switcher .short-rule {
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 16, src/scss/partials/_mobile-card-switcher.component.scss */
+  .mobile-card-switcher--wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  /* line 16, src/scss/partials/_mobile-card-switcher.component.scss */
+  .mobile-card-switcher--wrapper {
+    grid-template-rows: repeat(3, 1fr);
+    grid-auto-flow: column;
+    grid-gap: 30px 360px;
+    max-width: 880px;
+    margin: auto;
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  /* line 37, src/scss/partials/_mobile-card-switcher.component.scss */
+  .mobile-card-switcher--item.active .card {
+    background: #fff;
+    transform: translateY(-5px);
+    box-shadow: 0 14px 24px #D6D1C4;
+  }
+  /* line 42, src/scss/partials/_mobile-card-switcher.component.scss */
+  .mobile-card-switcher--item.active .card:before {
+    height: 100%;
+  }
+  /* line 47, src/scss/partials/_mobile-card-switcher.component.scss */
+  .mobile-card-switcher--item.active .image-in-device {
+    display: block;
+  }
+  /* line 56, src/scss/partials/_mobile-card-switcher.component.scss */
+  .mobile-card-switcher--item:nth-child(4) .card:before, .mobile-card-switcher--item:nth-child(5) .card:before, .mobile-card-switcher--item:nth-child(6) .card:before {
+    left: unset;
+    right: 0;
+  }
+}
+
+/* line 64, src/scss/partials/_mobile-card-switcher.component.scss */
+.mobile-card-switcher--item .card {
+  text-align: center;
+}
+
+@media screen and (min-width: 992px) {
+  /* line 64, src/scss/partials/_mobile-card-switcher.component.scss */
+  .mobile-card-switcher--item .card {
+    height: 160px;
+    background: #F4F3F0;
+    border-radius: 10px;
+    transition: 0.4s cubic-bezier(0.17, 0.84, 0.44, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  /* line 80, src/scss/partials/_mobile-card-switcher.component.scss */
+  .mobile-card-switcher--item .card:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    left: 0;
+    transform: translateY(-50%);
+    background: #00BC70;
+    width: 6px;
+    height: 0;
+    transition: 0.4s cubic-bezier(0.17, 0.84, 0.44, 1);
+  }
+}
+
+/* line 92, src/scss/partials/_mobile-card-switcher.component.scss */
+.mobile-card-switcher--item .card .title {
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 992px) {
+  /* line 96, src/scss/partials/_mobile-card-switcher.component.scss */
+  .mobile-card-switcher--item .card .description {
+    margin-bottom: 0;
+  }
+}
+
+/* line 104, src/scss/partials/_mobile-card-switcher.component.scss */
+.mobile-card-switcher--item .image-in-device {
+  position: relative;
+}
+
+@media screen and (min-width: 992px) {
+  /* line 104, src/scss/partials/_mobile-card-switcher.component.scss */
+  .mobile-card-switcher--item .image-in-device {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+  }
+}
+
+/* line 115, src/scss/partials/_mobile-card-switcher.component.scss */
+.mobile-card-switcher--item .image-in-device .image-wrap {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 236px;
+  padding-top: 16px;
+}
+
+/* line 123, src/scss/partials/_mobile-card-switcher.component.scss */
+.mobile-card-switcher--item .image-in-device .image-wrap img {
+  width: 100%;
+}
+
+/* line 129, src/scss/partials/_mobile-card-switcher.component.scss */
+.mobile-card-switcher--item .image-in-device .device-mockup {
+  width: 323px;
+  display: block;
+  margin: auto;
+  position: relative;
+}
+
+/**********************************************
+ Who Benefits Component Styles
+**********************************************/
+/* line 4, src/scss/partials/_who-benefits.component.scss */
+.who-benefits {
+  background: #FAF9F8;
+}
+
+/* line 7, src/scss/partials/_who-benefits.component.scss */
+.who-benefits .who-benefits--col {
+  margin-bottom: 30px;
+}
+
+/* line 11, src/scss/partials/_who-benefits.component.scss */
+.who-benefits .headline {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* line 16, src/scss/partials/_who-benefits.component.scss */
+.who-benefits .image-bubble {
+  height: 189px;
+  width: 189px;
+  padding: 12px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(45deg, rgba(8, 134, 205, 0.27), rgba(86, 226, 235, 0.27));
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+/* line 26, src/scss/partials/_who-benefits.component.scss */
+.who-benefits .image-bubble.associates {
+  background: linear-gradient(45deg, rgba(0, 188, 112, 0.27), rgba(116, 235, 86, 0.27));
+}
+
+/* line 30, src/scss/partials/_who-benefits.component.scss */
+.who-benefits .image-bubble.hospitality-companies {
+  background: linear-gradient(45deg, rgba(205, 102, 8, 0.27), rgba(235, 175, 86, 0.27));
+}
+
+/* line 34, src/scss/partials/_who-benefits.component.scss */
+.who-benefits .image-bubble img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 50%;
+}
+
+/* line 42, src/scss/partials/_who-benefits.component.scss */
+.who-benefits .title {
+  text-align: center;
 }
