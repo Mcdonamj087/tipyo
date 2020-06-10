@@ -1124,8 +1124,29 @@ footer .social-icons a:not(:first-child) {
   margin-bottom: 50px;
 }
 
+/* line 15, src/scss/partials/_mobile-card-switcher.component.scss */
+.mobile-card-switcher .pagination-dot-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+/* line 20, src/scss/partials/_mobile-card-switcher.component.scss */
+.mobile-card-switcher .pagination-dot-wrapper .dot {
+  height: 12px;
+  width: 12px;
+  background: #00BC70;
+  margin: 8px;
+  border-radius: 50%;
+}
+
+/* line 26, src/scss/partials/_mobile-card-switcher.component.scss */
+.mobile-card-switcher .pagination-dot-wrapper .dot.active {
+  background: #80deb8;
+}
+
 @media screen and (min-width: 768px) {
-  /* line 16, src/scss/partials/_mobile-card-switcher.component.scss */
+  /* line 33, src/scss/partials/_mobile-card-switcher.component.scss */
   .mobile-card-switcher--wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1133,7 +1154,7 @@ footer .social-icons a:not(:first-child) {
 }
 
 @media screen and (min-width: 992px) {
-  /* line 16, src/scss/partials/_mobile-card-switcher.component.scss */
+  /* line 33, src/scss/partials/_mobile-card-switcher.component.scss */
   .mobile-card-switcher--wrapper {
     grid-template-rows: repeat(3, 1fr);
     grid-auto-flow: column;
@@ -1145,34 +1166,34 @@ footer .social-icons a:not(:first-child) {
 }
 
 @media screen and (min-width: 992px) {
-  /* line 37, src/scss/partials/_mobile-card-switcher.component.scss */
+  /* line 55, src/scss/partials/_mobile-card-switcher.component.scss */
   .mobile-card-switcher--item.active .card {
     background: #fff;
     transform: translateY(-5px);
     box-shadow: 0 14px 24px #D6D1C4;
   }
-  /* line 42, src/scss/partials/_mobile-card-switcher.component.scss */
+  /* line 60, src/scss/partials/_mobile-card-switcher.component.scss */
   .mobile-card-switcher--item.active .card:before {
     height: 100%;
   }
-  /* line 47, src/scss/partials/_mobile-card-switcher.component.scss */
+  /* line 65, src/scss/partials/_mobile-card-switcher.component.scss */
   .mobile-card-switcher--item.active .image-in-device {
     display: block;
   }
-  /* line 56, src/scss/partials/_mobile-card-switcher.component.scss */
+  /* line 74, src/scss/partials/_mobile-card-switcher.component.scss */
   .mobile-card-switcher--item:nth-child(4) .card:before, .mobile-card-switcher--item:nth-child(5) .card:before, .mobile-card-switcher--item:nth-child(6) .card:before {
     left: unset;
     right: 0;
   }
 }
 
-/* line 64, src/scss/partials/_mobile-card-switcher.component.scss */
+/* line 82, src/scss/partials/_mobile-card-switcher.component.scss */
 .mobile-card-switcher--item .card {
   text-align: center;
 }
 
 @media screen and (min-width: 992px) {
-  /* line 64, src/scss/partials/_mobile-card-switcher.component.scss */
+  /* line 82, src/scss/partials/_mobile-card-switcher.component.scss */
   .mobile-card-switcher--item .card {
     height: 160px;
     background: #F4F3F0;
@@ -1186,7 +1207,7 @@ footer .social-icons a:not(:first-child) {
     position: relative;
     overflow: hidden;
   }
-  /* line 80, src/scss/partials/_mobile-card-switcher.component.scss */
+  /* line 98, src/scss/partials/_mobile-card-switcher.component.scss */
   .mobile-card-switcher--item .card:before {
     content: '';
     display: block;
@@ -1202,25 +1223,25 @@ footer .social-icons a:not(:first-child) {
   }
 }
 
-/* line 92, src/scss/partials/_mobile-card-switcher.component.scss */
+/* line 110, src/scss/partials/_mobile-card-switcher.component.scss */
 .mobile-card-switcher--item .card .title {
   margin-bottom: 10px;
 }
 
 @media screen and (min-width: 992px) {
-  /* line 96, src/scss/partials/_mobile-card-switcher.component.scss */
+  /* line 114, src/scss/partials/_mobile-card-switcher.component.scss */
   .mobile-card-switcher--item .card .description {
     margin-bottom: 0;
   }
 }
 
-/* line 104, src/scss/partials/_mobile-card-switcher.component.scss */
+/* line 122, src/scss/partials/_mobile-card-switcher.component.scss */
 .mobile-card-switcher--item .image-in-device {
   position: relative;
 }
 
 @media screen and (min-width: 992px) {
-  /* line 104, src/scss/partials/_mobile-card-switcher.component.scss */
+  /* line 122, src/scss/partials/_mobile-card-switcher.component.scss */
   .mobile-card-switcher--item .image-in-device {
     position: absolute;
     top: 0;
@@ -1230,7 +1251,7 @@ footer .social-icons a:not(:first-child) {
   }
 }
 
-/* line 115, src/scss/partials/_mobile-card-switcher.component.scss */
+/* line 133, src/scss/partials/_mobile-card-switcher.component.scss */
 .mobile-card-switcher--item .image-in-device .image-wrap {
   position: absolute;
   top: 0;
@@ -1240,12 +1261,12 @@ footer .social-icons a:not(:first-child) {
   padding-top: 16px;
 }
 
-/* line 123, src/scss/partials/_mobile-card-switcher.component.scss */
+/* line 141, src/scss/partials/_mobile-card-switcher.component.scss */
 .mobile-card-switcher--item .image-in-device .image-wrap img {
   width: 100%;
 }
 
-/* line 129, src/scss/partials/_mobile-card-switcher.component.scss */
+/* line 147, src/scss/partials/_mobile-card-switcher.component.scss */
 .mobile-card-switcher--item .image-in-device .device-mockup {
   width: 323px;
   display: block;

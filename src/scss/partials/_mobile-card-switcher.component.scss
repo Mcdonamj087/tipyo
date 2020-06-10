@@ -11,6 +11,23 @@
   .short-rule {
     margin-bottom: 50px;
   }
+
+  .pagination-dot-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  
+    .dot {
+      @include size(12px);
+      background: $green;
+      margin: 8px;
+      border-radius: 50%;
+
+      &.active {
+        background: tint($green, 50%);
+      }
+    }
+  }
 }
 
 .mobile-card-switcher--wrapper {
@@ -28,6 +45,7 @@
     margin: auto;
     position: relative;
   }
+
 }
 
 .mobile-card-switcher--item {
