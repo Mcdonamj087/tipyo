@@ -1,0 +1,136 @@
+/**********************************************
+ Mobile Card Switcher Component Styles
+**********************************************/
+.mobile-card-switcher {
+  
+  .headline {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .short-rule {
+    margin-bottom: 50px;
+  }
+}
+
+.mobile-card-switcher--wrapper {
+
+  @include breakpoint(md) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include breakpoint(lg) {
+    grid-template-rows: repeat(3, 1fr);
+    grid-auto-flow: column;
+    grid-gap: 30px 360px;
+    max-width: 880px;
+    margin: auto;
+    position: relative;
+  }
+}
+
+.mobile-card-switcher--item {
+  
+  @include breakpoint(lg) {
+    &.active {
+      .card {
+        background: #fff;
+        transform: translateY(-5px);
+        box-shadow: 0 14px 24px $dark-tan;
+
+        &:before {
+          height: 100%;
+        }
+      }
+
+      .image-in-device {
+        display: block;
+      }
+    }
+
+    &:nth-child(4),
+    &:nth-child(5),
+    &:nth-child(6) {
+
+      .card:before{
+        left: unset;
+        right: 0;
+      }
+    }
+  }
+
+
+  .card {
+    text-align: center;
+
+    @include breakpoint(lg) {
+      height: 160px;
+      background: $tan;
+      border-radius: 10px;
+      transition: .4s $ease-out-quartic;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 0 20px;
+      position: relative;
+      overflow: hidden;
+
+      &:before {
+        content: '';
+        display: block;
+        @include position(absolute, 50% null 0 0);
+        transform: translateY(-50%);
+        background: $green;
+        width: 6px;
+        height: 0;
+        transition: .4s $ease-out-quartic;
+      }
+    }
+
+    .title {
+      margin-bottom: 10px;
+    }
+
+    .description {
+
+      @include breakpoint(lg) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .image-in-device {
+    position: relative;
+
+    @include breakpoint(lg) {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      display: none;
+    }
+
+    .image-wrap {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 236px;
+      padding-top: 16px;
+
+      img {
+        width: 100%;
+
+      }
+    }
+
+    .device-mockup {
+      width: 323px;
+      display: block;
+      margin: auto;
+      position: relative;
+    }
+  }
+}

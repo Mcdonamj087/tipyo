@@ -1,0 +1,46 @@
+/**********************************************
+ Who Benefits Component Styles
+**********************************************/
+.who-benefits {
+  background: $white-sand;
+
+  .who-benefits--col {
+    margin-bottom: 30px;
+  }
+
+  .headline {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .image-bubble {
+    @include size(165px + 24px);
+    padding: 12px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(45deg, $blue-gradient);
+    margin: auto;
+    margin-bottom: 20px;
+
+    &.associates {
+      background: linear-gradient(45deg, $green-gradient);
+    }
+    
+    &.hospitality-companies {
+      background: linear-gradient(45deg, $orange-gradient);
+    }
+
+    img {
+      @include size(100%);
+      object-fit: cover;
+      object-position: center;
+      border-radius: 50%;
+    }
+  }
+
+  .title {
+    text-align: center;
+  }
+
+}

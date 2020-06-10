@@ -1,22 +1,22 @@
 {
 	"name" : "My Dope Project",
-	"projects" : [{
-		"title" : "OutboundEngine Website",
-		"dataproject" : "outboundengine"
+	"mobileSwitcherItems" : [{
+		"description" : "Open the TipYo App",
+		"imageSrc" : "tipyo-mobile-switcher-placeholder.jpg"
 	}, {
-		"title" : "eGo Bikeshare",
-		"dataproject" : "ego"
+		"description" : "Select or customize your tip amount",
+		"imageSrc" : "tipyo-mobile-switcher-placeholder.jpg"
 	}, {
-		"title" : "Scrypt Website",
-		"dataproject" : "scrypt"
+		"description" : "Select participating location",
+		"imageSrc" : "tipyo-mobile-switcher-placeholder.jpg"
 	}, {
-		"title" : "Runa Sustainability Report",
-		"dataproject" : "runa"
+		"description" : "Choose staff to tip",
+		"imageSrc" : "tipyo-mobile-switcher-placeholder.jpg"
 	}, {
-		"title" : "Good Grade Pill",
-		"dataproject" : "goodgradepill"
+		"description" : "Enter your room number or staff person's name",
+		"imageSrc" : "tipyo-mobile-switcher-placeholder.jpg"
 	}, {
-		"title" : "Posters",
-		"dataproject" : "posters"
+		"description" : "Chose payment method and confirm tip",
+		"imageSrc" : "tipyo-mobile-switcher-placeholder.jpg"
 	}]
 }

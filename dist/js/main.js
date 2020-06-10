@@ -13,7 +13,19 @@
 if (!Element.prototype.matches) {
 	Element.prototype.matches = Element.prototype.msMatchesSelector || Element.prototype.webkitMatchesSelector;
 }
-document.addEventListener('click', (function (event) {
-	if (!event.target.matches('#click-me')) return;
-	alert('You clicked me!');
-}), false);
+const mobileCardSwitcherItems = document.querySelectorAll('.mobile-card-switcher--item');
+
+if(mobileCardSwitcherItems != null) {
+
+	const mqMinLg = window.matchMedia('(min-width: 992px)');
+
+
+
+	mobileCardSwitcherItems.forEach( (item, idx, arr) => item.addEventListener('mouseenter', (function(){
+
+		if(mqMinLg.matches) {
+			arr.forEach(item => item.classList.remove('active'))
+			item.classList.add('active');
+		}
+	})))
+}

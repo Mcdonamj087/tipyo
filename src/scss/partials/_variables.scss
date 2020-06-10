@@ -19,7 +19,8 @@ $heading-font: 'Qanelas Soft', sans-serif;
 
 // Buttons
 ///////////////////////////////////////////////
-$btn-timing-function: 0.2s cubic-bezier(.17,.67,.5,1);
+$btn-timing-function: cubic-bezier(.17,.67,.5,1);
+$ease-out-quartic: cubic-bezier(.17,.84,.44,1);
 
 // Header
 ///////////////////////////////////////////////

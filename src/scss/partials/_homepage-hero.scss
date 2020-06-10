@@ -1,6 +1,9 @@
+/**********************************************
+ Homepage Hero Component Styles
+**********************************************/
+
 .homepage-hero {
   background: linear-gradient(45deg, $green-gradient);
-  margin-bottom: -100px;
 }
 
 .homepage-hero--content {
@@ -103,5 +106,13 @@
       }
     }
 
+  }
+}
+
+.homepage-hero--bottom-spacer {
+  height: 125px;
+
+  @include breakpoint(md) {
+    height: 140px;
   }
 }

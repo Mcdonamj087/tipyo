@@ -33,7 +33,7 @@ header {
 
 	a {
 		text-decoration: none;
-		transition: $btn-timing-function;
+		transition: .2s $btn-timing-function;
 		transition-property: opacity, background;
 
 		&:hover {
@@ -111,7 +111,7 @@ header {
 			pointer-events: none;
 			transform: translateY(-10px);
 			transform-origin: top left;
-			transition: $btn-timing-function;
+			transition: .2s $btn-timing-function;
 			transition-property: opacity, transform;
 
 			> a {

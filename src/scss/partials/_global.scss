@@ -135,6 +135,33 @@ strong, b {
   font-weight: bold 
 }
 
+ul, ol {
+  padding-left: 18px;
+
+  li {
+    margin-bottom: 10px;
+  }
+}
+
+ul {
+
+  li {
+    position: relative;
+    
+    &:before {
+      content: "• ";
+      color: $green;
+      position: absolute;
+      left: -20px;
+      font-size: 1.2em;
+    }
+  }
+}
+
+ol {
+  list-style: decimal;
+}
+
 .btn {
   display: inline-block;
   position: relative;
@@ -151,7 +178,7 @@ strong, b {
   outline: 0;
   z-index: 1;
   cursor: pointer;
-  transition: $btn-timing-function;
+  transition: .2s $btn-timing-function;
   transition-property: background, color;
   text-decoration: none;
   white-space: nowrap;
@@ -167,6 +194,15 @@ strong, b {
   + .btn {
     margin-top: 10px;
   }
+}
+
+hr.short-rule {
+  height: 6px;
+  width: 60px;
+  margin: auto;
+  border: none;
+  background: $dark-tan;
+  border-radius: 3px;
 }
 
 .chevron-arrow-right:after {

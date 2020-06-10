@@ -1,0 +1,28 @@
+<section class="mobile-card-switcher section-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h2 class="headline">Use Your Phone to Securely Tip</h2>
+        <hr class="short-rule" />
+        <div class="mobile-card-switcher--wrapper">
+
+          {% for item in mobileSwitcherItems %}
+          <div class="mobile-card-switcher--item {% if loop.index == 1 %}active{% endif %}">
+            <div class="card">
+              <h3 class="title">Step {{loop.index}}</h3>
+              <p class="description">{{item.description}}</p>
+            </div>
+            <div class="image-in-device">
+              <div class="image-wrap">
+                <img src="images/{{item.imageSrc}}" alt="Step {{loop.index}}">
+              </div>
+              <img class="device-mockup" src="images/iphone-x-mockup.png" alt="iPhone X">
+            </div>
+          </div>
+          {% endfor %}
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
