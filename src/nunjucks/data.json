@@ -2,13 +2,13 @@
 	"name" : "My Dope Project",
 	"mobileSwitcherItems" : [{
 		"description" : "Open the TipYo App",
-		"imageSrc" : "tipyo-mobile-switcher-placeholder.jpg"
+		"imageSrc" : "tipyo-step-1.gif"
 	}, {
 		"description" : "Select or customize your tip amount",
-		"imageSrc" : "tipyo-mobile-switcher-placeholder.jpg"
+		"imageSrc" : "tipyo-step-2.gif"
 	}, {
 		"description" : "Select participating location",
-		"imageSrc" : "tipyo-mobile-switcher-placeholder.jpg"
+		"imageSrc" : "tipyo-step-3.gif"
 	}, {
 		"description" : "Choose staff to tip",
 		"imageSrc" : "tipyo-mobile-switcher-placeholder.jpg"

@@ -1,0 +1,47 @@
+/**********************************************
+ Video Section Component Styles
+**********************************************/
+
+.video-section {
+
+  .text-content {
+    text-align: center;
+    margin-bottom: 50px;
+
+    .subhead {
+      max-width: 830px;
+      margin: auto;
+    }
+  }
+
+  .video-grid {
+    
+    @include breakpoint(lg) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 30px;
+    }
+  }
+
+  .video-wrapper {
+    width: 100%;
+    font-size: 0;
+
+    &:first-child {
+      margin-bottom: 40px;
+
+      @include breakpoint(lg) {
+        margin-bottom: 0;
+      }
+    }
+
+
+    &.has-border {
+      border: 5px solid $dark-tan;
+    }
+
+    video {
+      width: 100%;
+    }
+  }
+}

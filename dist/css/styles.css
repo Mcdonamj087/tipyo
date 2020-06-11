@@ -392,79 +392,79 @@ hr.short-rule {
 
 /* line 232, src/scss/partials/_global.scss */
 .section-padding {
-  padding: 50px 0;
+  padding: 60px 0;
 }
 
 @media screen and (min-width: 768px) {
   /* line 232, src/scss/partials/_global.scss */
   .section-padding {
-    padding: 65px 0;
+    padding: 80px 0;
   }
 }
 
 @media screen and (min-width: 992px) {
-  /* line 232, src/scss/partials/_global.scss */
-  .section-padding {
-    padding: 85px 0;
-  }
-}
-
-@media screen and (min-width: 1200px) {
   /* line 232, src/scss/partials/_global.scss */
   .section-padding {
     padding: 100px 0;
   }
 }
 
+@media screen and (min-width: 1200px) {
+  /* line 232, src/scss/partials/_global.scss */
+  .section-padding {
+    padding: 120px 0;
+  }
+}
+
 /* line 248, src/scss/partials/_global.scss */
 .section-top-padding {
-  padding-top: 50px;
+  padding-top: 60px;
 }
 
 @media screen and (min-width: 768px) {
   /* line 248, src/scss/partials/_global.scss */
   .section-top-padding {
-    padding-top: 65px;
+    padding-top: 80px;
   }
 }
 
 @media screen and (min-width: 992px) {
-  /* line 248, src/scss/partials/_global.scss */
-  .section-top-padding {
-    padding-top: 85px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
   /* line 248, src/scss/partials/_global.scss */
   .section-top-padding {
     padding-top: 100px;
   }
 }
 
+@media screen and (min-width: 1200px) {
+  /* line 248, src/scss/partials/_global.scss */
+  .section-top-padding {
+    padding-top: 120px;
+  }
+}
+
 /* line 264, src/scss/partials/_global.scss */
 .section-bottom-padding {
-  padding-bottom: 50px;
+  padding-bottom: 60px;
 }
 
 @media screen and (min-width: 768px) {
   /* line 264, src/scss/partials/_global.scss */
   .section-bottom-padding {
-    padding-bottom: 65px;
+    padding-bottom: 80px;
   }
 }
 
 @media screen and (min-width: 992px) {
   /* line 264, src/scss/partials/_global.scss */
   .section-bottom-padding {
-    padding-bottom: 85px;
+    padding-bottom: 100px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   /* line 264, src/scss/partials/_global.scss */
   .section-bottom-padding {
-    padding-bottom: 100px;
+    padding-bottom: 120px;
   }
 }
 
@@ -1330,4 +1330,56 @@ footer .social-icons a:not(:first-child) {
 /* line 42, src/scss/partials/_who-benefits.component.scss */
 .who-benefits .title {
   text-align: center;
+}
+
+/**********************************************
+ Video Section Component Styles
+**********************************************/
+/* line 7, src/scss/partials/_video-section.component.scss */
+.video-section .text-content {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* line 11, src/scss/partials/_video-section.component.scss */
+.video-section .text-content .subhead {
+  max-width: 830px;
+  margin: auto;
+}
+
+@media screen and (min-width: 992px) {
+  /* line 17, src/scss/partials/_video-section.component.scss */
+  .video-section .video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+  }
+}
+
+/* line 26, src/scss/partials/_video-section.component.scss */
+.video-section .video-wrapper {
+  width: 100%;
+  font-size: 0;
+}
+
+/* line 30, src/scss/partials/_video-section.component.scss */
+.video-section .video-wrapper:first-child {
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 992px) {
+  /* line 30, src/scss/partials/_video-section.component.scss */
+  .video-section .video-wrapper:first-child {
+    margin-bottom: 0;
+  }
+}
+
+/* line 39, src/scss/partials/_video-section.component.scss */
+.video-section .video-wrapper.has-border {
+  border: 5px solid #D6D1C4;
+}
+
+/* line 43, src/scss/partials/_video-section.component.scss */
+.video-section .video-wrapper video {
+  width: 100%;
 }
