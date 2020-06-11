@@ -77,4 +77,5 @@ if(mobileCardSwitcherItems != null) {
 			item.classList.add('active');
 		}
 	})))
+
 }
