@@ -19,12 +19,13 @@
   
     .dot {
       @include size(12px);
-      background: $green;
+      background: tint($green, 80%);
       margin: 8px;
       border-radius: 50%;
+      cursor: pointer;
 
       &.active {
-        background: tint($green, 50%);
+        background: $green;
       }
     }
   }
@@ -138,7 +139,8 @@
       width: 236px;
       padding-top: 16px;
 
-      img {
+      img,
+      video {
         width: 100%;
 
       }

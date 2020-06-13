@@ -2,21 +2,21 @@
 	"name" : "My Dope Project",
 	"mobileSwitcherItems" : [{
 		"description" : "Open the TipYo App",
-		"imageSrc" : "tipyo-step-1.gif"
+		"imgPrefix" : "tipyo-step-1"
 	}, {
 		"description" : "Select or customize your tip amount",
-		"imageSrc" : "tipyo-step-2.gif"
+		"imgPrefix" : "tipyo-step-2"
 	}, {
 		"description" : "Select participating location",
-		"imageSrc" : "tipyo-step-3.gif"
+		"imgPrefix" : "tipyo-step-3"
 	}, {
 		"description" : "Choose staff to tip",
-		"imageSrc" : "tipyo-mobile-switcher-placeholder.jpg"
+		"imgPrefix" : "tipyo-step-4"
 	}, {
 		"description" : "Enter your room number or staff person's name",
-		"imageSrc" : "tipyo-mobile-switcher-placeholder.jpg"
+		"imgPrefix" : "tipyo-step-5"
 	}, {
 		"description" : "Chose payment method and confirm tip",
-		"imageSrc" : "tipyo-mobile-switcher-placeholder.jpg"
+		"imgPrefix" : "tipyo-step-6"
 	}]
 }

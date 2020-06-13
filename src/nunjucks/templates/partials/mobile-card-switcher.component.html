@@ -1,3 +1,5 @@
+{% set video = true %}
+
 <section class="mobile-card-switcher section-padding">
   <div class="container">
     <div class="row">
@@ -14,7 +16,15 @@
             </div>
             <div class="image-in-device">
               <div class="image-wrap">
-                <img src="images/{{item.imageSrc}}" alt="Step {{loop.index}}">
+                {% if video %}
+                <video poster="video/{{item.imgPrefix}}.jpg" autoplay loop playsinline muted>
+                  <source src="video/{{item.imgPrefix}}.webm" type="video/webm">
+                  <source src="video/{{item.imgPrefix}}.mp4" type="video/mp4">
+                  Sorry, your browser doesn't support embedded videos.
+                </video>
+                {% else %}
+                <img src="images/{{item.imgPrefix}}.jpg" alt="Step {{loop.index}}">
+                {% endif %}
               </div>
               <img class="device-mockup" src="images/iphone-x-mockup.png" alt="iPhone X">
             </div>

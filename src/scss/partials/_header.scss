@@ -2,7 +2,7 @@
  Header Styles
 **********************************************/
 
-header {
+#master-header {
 	@include position(fixed, 0 0 null 0);
 	height: $header-height-mobile;
 	background: #fff;
@@ -11,9 +11,18 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	transition: transform .4s $ease-out-quartic;
 	
 	@include breakpoint(lg) {
 		height: $header-height;
+	}
+
+	&.unpinned {
+		transform: translateY(-$header-height-mobile);
+
+		@include breakpoint(lg) {
+			transform: translateY(-$header-height);
+		}
 	}
 
 	.logo {
@@ -145,8 +154,8 @@ header {
 	}
 }
 
-
-#mobile-nav-trigger {
+#mobile-nav-trigger,
+#mobile-nav-close-trigger {
   position: absolute;
   top: 0;
   right:0;
@@ -156,10 +165,6 @@ header {
 	align-items: center;
   z-index: 1001;
 	cursor: pointer;
-	
-	@include breakpoint(lg) {
-		display: none;
-	}
 
 	//Wordpress Admin Style
 	body.logged-in & {
@@ -181,63 +186,99 @@ header {
 		
 		&:nth-child(1) {
 			transform: translateY(-7px);
-			
-			body.mobile-nav-is-open & {
-				transform: translateY(0px) rotate(-45deg);
-			}
-		}
-
-		&:nth-child(2) {
-			body.mobile-nav-is-open & {
-				width: 0;
-			}
 		}
 		
 		&:nth-child(3) {
 			transform: translateY(7px);
-			
-			body.mobile-nav-is-open & {
-				transform: translateY(0px) rotate(45deg);
-			}
 		}
 	}
 }
 
+#mobile-nav-trigger {
 
-#mobile-menu {
-  background: linear-gradient(to right top, #005E38, #00BC70);
-  pointer-events: none;
-  width: 100%;
-  display: flex;
-  opacity: 0;
-  flex-direction: column;
-  align-items: center;
-  height: 100%;
-  justify-content: center;
-  transition: 0.5s cubic-bezier(0.35, 0.2, 0.35, 1);
-  position: fixed;
-  z-index: 99;
-  transform: inherit;
-	
-	a {
-		font-weight: 700;
-		padding: 20px;
-		color: #fff;
-		font-size: 20px;
-		font-family: $heading-font;
-		text-decoration: none;
-		text-transform: uppercase;
-		transition: .2s ease-out;
-		
-		&:hover {
-			opacity: .7;
+	@include breakpoint(lg) {
+		display: none;
+	}
+}
+
+#mobile-nav-close-trigger {
+	@include size(80px);
+
+	span {
+
+		&:nth-child(1) {
+			transform: translateY(0px) rotate(-45deg);
+		}
+
+		&:nth-child(2) {
+			transform: translateY(0px) rotate(45deg);
 		}
 	}
+}
+
+#mobile-nav--underlay {
+	@include position(fixed, 0);
+	background: rgba($black, .5);
+	z-index: 9999;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity .5s $ease-out-quartic;
 
 	body.mobile-nav-is-open & {
-		pointer-events: auto;
 		opacity: 1;
-		transform: scale(1) rotateX(0deg) rotateY(0deg);
+		pointer-events: auto;
 	}
 }
 
+#mobile-nav {
+	background: $tan;
+	@include position(fixed, 0 0 0 null);
+	width: 100%;
+	max-width: 500px;
+	z-index: 10000;
+	transform: translateX(100%);
+	transition: transform .5s $ease-out-quartic;
+	padding: 30px;
+
+	@include breakpoint(sm) {
+		padding: 30px 50px;
+	}
+	
+	body.mobile-nav-is-open & {
+		transform: translateX(0);
+	}
+
+	.logo {
+		max-width: 80px;
+		margin-left: -7px;
+		margin-bottom: 60px;
+	}
+
+	nav {
+		.mobile-nav-item {
+			margin-bottom: 30px;
+			display: block;
+			text-decoration: none;
+			text-transform: uppercase;
+			font-weight: bold;
+			line-height: 1.5em;
+			letter-spacing: .05em;
+			color: $black;
+		}
+	}
+
+	.app-store-btns {
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: -6px;
+
+		a {
+			font-size: 0;
+			margin: 8px 6px;
+		}
+
+		img {
+			height: 46px;
+		}
+	}
+}

@@ -1,0 +1,62 @@
+/**********************************************
+ Two Column Contact Component Styles
+**********************************************/
+.two-column-contact {
+
+  @include breakpoint(lg) {
+    display: flex;
+  }
+  
+  &--col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 300px;
+    position: relative;
+    
+    @include breakpoint(lg) {
+      height: 380px;
+    }
+
+    svg {
+      display: none;
+      
+      @include breakpoint(lg) {
+        display: block;
+        position: absolute;
+        z-index: 1;
+        right: -22px;
+      }
+    }
+
+    .content-wrap {
+      max-width: 311px;
+    }
+
+    &.general {
+      background: $tan;
+
+      @include breakpoint(lg) {
+        width: 49.2%;
+      }
+
+      svg path {
+        fill: $tan;
+      }
+    }
+
+    &.special {
+      background: linear-gradient(45deg, $green-gradient);
+      flex: 1;
+    }
+
+    .subhead {
+      margin: 0;
+    }
+
+    .subhead + .btn {
+      margin-top: 25px;
+    }
+  }
+}
