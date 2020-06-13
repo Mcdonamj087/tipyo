@@ -24,7 +24,7 @@
 	
 
 <!-- Begin Global Header -->
-<header>
+<header id="master-header">
   <div class="logo">
     <a href="/">
       <img src="svg/tipyo-logo-green.svg" alt="TipYo Logo">
@@ -32,13 +32,13 @@
   </div>
   <nav class="main-nav">
     <div class="main-nav-item">
-      <a href="#">Home</a>
+      <a href="/">Home</a>
     </div>
     <div class="main-nav-item has-sub">
       <a href="javascript:void(0)">How it Works <span><svg width="8" height="5" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1l3 3 3-3" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
       <nav class="sub-nav">
-        <a href="#">For Travelers</a>
-        <a href="#">For Hospitality Companies</a>
+        <a href="travelers.html">For Travelers</a>
+        <a href="hospitality-companies.html">For Hospitality Companies</a>
       </nav>
     </div>
     <div class="main-nav-item">
@@ -48,7 +48,7 @@
       <a href="#">Blog</a>
     </div>
     <div class="main-nav-item">
-      <a href="#">Contact Us</a>
+      <a href="#contact-us">Contact Us</a>
     </div>
   </nav>
   <div class="app-store-btns">
@@ -66,6 +66,38 @@
   </div>
 </header>
 
+<div id="mobile-nav--underlay"></div>
+<div id="mobile-nav">
+
+  <div id="mobile-nav-close-trigger">
+    <span></span>
+    <span></span>
+  </div>
+
+  <div class="logo">
+    <a href="/">
+      <img src="svg/tipyo-logo-green.svg" alt="TipYo Logo">
+    </a>
+  </div>
+
+  <nav>
+    <a class="mobile-nav-item" href="/">Home</a>
+    <a class="mobile-nav-item" href="travelers.html">TipYo For Travelers</a>
+    <a class="mobile-nav-item" href="hospitality-companies.html">TipYo For Hospitality Companies</a>
+    <a class="mobile-nav-item" href="#">Press</a>
+    <a class="mobile-nav-item" href="#">Blog</a>
+    <a class="mobile-nav-item" href="#contact-us">Contact Us</a>
+  </nav>
+
+  <div class="app-store-btns">
+    <a href="#" title="App Store">
+      <img src="svg/appstore-badge.svg" alt="Download TipYo on Apple App Store">
+    </a>
+    <a href="#" title="Google Play Store">
+      <img src="svg/google-play-badge.svg" alt="Download TipYo on Apple App Store">
+    </a>
+  </div>
+</div>
 <!-- End Global Header -->
 
 <section class="section-padding">
@@ -141,6 +173,8 @@
 </div> <!-- ends 'wrapper' div -->
 
 	<script type="text/javascript" src="plugins/siema.min.js"></script>
+	<script type="text/javascript" src="plugins/bodyScrollLock.min.js"></script>
+	<script type="text/javascript" src="plugins/headroom.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
