@@ -1,22 +1,63 @@
 {
 	"name" : "My Dope Project",
-	"mobileSwitcherItems" : [{
-		"description" : "Open the TipYo App",
-		"imgPrefix" : "tipyo-step-1"
-	}, {
-		"description" : "Select or customize your tip amount",
-		"imgPrefix" : "tipyo-step-2"
-	}, {
-		"description" : "Select participating location",
-		"imgPrefix" : "tipyo-step-3"
-	}, {
-		"description" : "Choose staff to tip",
-		"imgPrefix" : "tipyo-step-4"
-	}, {
-		"description" : "Enter your room number or staff person's name",
-		"imgPrefix" : "tipyo-step-5"
-	}, {
-		"description" : "Chose payment method and confirm tip",
-		"imgPrefix" : "tipyo-step-6"
-	}]
+	"mobileSwitcherItems" : [
+		{
+			"description" : "Open the TipYo App",
+			"imgPrefix" : "tipyo-step-1"
+		}, 
+		{
+			"description" : "Select or customize your tip amount",
+			"imgPrefix" : "tipyo-step-2"
+		}, 
+		{
+			"description" : "Select participating location",
+			"imgPrefix" : "tipyo-step-3"
+		}, 
+		{
+			"description" : "Choose staff to tip",
+			"imgPrefix" : "tipyo-step-4"
+		}, 
+		{
+			"description" : "Enter your room number or staff person's name",
+			"imgPrefix" : "tipyo-step-5"
+		}, 
+		{
+			"description" : "Chose payment method and confirm tip",
+			"imgPrefix" : "tipyo-step-6"
+		}
+	],
+	"features" : [
+		{
+			"title" : "Convenient",
+			"description" : "Available on Apple App Store or Google Play"
+		},
+		{
+			"title" : "Free for Travelers",
+			"description" : "No added cost to tip"
+		},
+		{
+			"title" : "Simple",
+			"description" : "Integrates with your payroll system to disburse the tips."
+		},
+		{
+			"title" : "Marketing Support",
+			"description" : "Marketing Tool kit to promote TipYo at your property."
+		},
+		{
+			"title" : "Safe & Secure",
+			"description" : "TipYo partners with Stripe for your credit card processing."
+		},
+		{
+			"title" : "Affordable",
+			"description" : "Monthly subscription fee structure."
+		}
+	],
+	"gettingStarted" : [
+		"Subscribe to TipYo Mobile Tipping Service.",
+		"We will provide a link for you to create an account with our credit card processing partner, Stripe. ",
+		"Your property will be added to the TipYo App along with the services that can be tipped.",
+		"We will provide you with a Marketing tool kit to promote TipYo to guests.",
+		"When guests tip, the money is deposited into your Stripe Account.",
+		"TipYo will work with your payroll so you can disburse the tips to your associates."
+	]
 }
