@@ -1,0 +1,108 @@
+/**********************************************
+ Text Image Hero Component Styles
+**********************************************/
+.text-image-hero {
+  position: relative;
+  
+  @include breakpoint(lg) {
+    display: flex;
+    align-items: center;
+    height: 640px;
+  }
+  
+  @include breakpoint(xl) {
+    height: 680px;
+  }
+
+  &.travelers {
+    background: linear-gradient(45deg, $blue-gradient);
+  }
+
+  &.hospitality-companies {
+    background: linear-gradient(45deg, $orange-gradient);
+  }
+
+  .col {
+    
+    @include breakpoint(lg) {
+      display: flex;
+      align-items: center;
+    }
+  }
+  
+  &--content {
+    text-align: center;
+    
+    @include breakpoint(lg) {
+      width: 50%;
+      flex-shrink: 0;
+      text-align: left;
+    }
+
+    .subhead {
+      margin: 0;
+    }
+  }
+  
+  .app-store-btns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+    
+    @include breakpoint(lg) {
+      justify-content: initial;
+      margin-left: -6px;
+    }
+
+    a {
+      margin: 6px;
+    }
+
+    img {
+      height: 46px;
+    }
+  }
+
+  &--image-wrap {
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 40px 30px -210px;
+    height: 300px;
+
+    @include breakpoint(md) {
+      height: 400px;
+      margin-bottom: -270px;
+    }
+    
+
+    @include breakpoint(lg) {
+      border-radius: 20px 0 0 20px;
+      margin: 0;
+      width: 43.34%;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 500px;
+    }
+
+    img {
+      @include size(100%);
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &--post-spacer {
+    height: 150px;
+
+    @include breakpoint(md) {
+      height: 190px;
+    }
+
+    @include breakpoint(lg) {
+      display: none;
+    }
+  }
+}

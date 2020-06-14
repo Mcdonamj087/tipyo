@@ -1,0 +1,115 @@
+/**********************************************
+  Comparison Table Plank Component Styles
+**********************************************/
+.comparison-table-plank {
+  background: $white-sand;
+
+  .headline {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &--table-wrap {
+    display: grid;
+    grid-template-columns: 3fr repeat(3, 1fr);
+    grid-column-gap: 16px;
+    justify-content: center;
+    
+    @include breakpoint(md) {
+      grid-template-columns: 360px repeat(3, 1fr);
+    }
+    
+    @include breakpoint(lg) {
+      grid-template-columns: 360px repeat(3, 160px);
+    }
+  }
+
+  &--table-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .column-head {
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @include breakpoint(md) {
+        height: 105px;
+      }
+
+      .logo {
+        height: 40px;
+
+        @include breakpoint(md) {
+          height: 50px;
+        }
+      }
+
+      .competitor-name {
+        margin: 0;
+        margin-top: 18px;
+
+        @include breakpoint(md, 'max') {
+          font-size: 18px;
+        }
+      }
+    }
+    
+    &.bullet-points {
+      align-items: flex-end;
+  
+      p {
+        margin: 0;
+        text-align: right;
+        
+        @include breakpoint(md) {
+          margin-right: 20px;
+        }
+
+        @include breakpoint(md, 'max') {
+          font-size: 16px;
+          line-height: 20px;
+        }
+      }
+    }
+
+    .icon {
+      width: 24px;
+
+      @include breakpoint(md) {
+        width: 30px;
+      }
+    }
+
+    &.compare-col {
+      border-radius: 10px;
+      padding-bottom: 20px;
+      
+      @include breakpoint(lg) {
+        background: #fff;
+      }
+
+      &.emphasize {
+
+        @include breakpoint(lg) {
+          box-shadow: 0 14px 24px rgba($dark-tan, 1);
+        }
+      }
+    }
+  }
+
+  &--table-row {
+    height: 70px;
+    display: flex;
+    align-items: center;
+
+    @include breakpoint(md) {
+      height: 60px;
+    }
+  }
+}
+
+
+

@@ -1,0 +1,74 @@
+/**********************************************
+ Features List Component Styles
+**********************************************/
+// <section class="features-list section-padding">
+// 	<div class="container">
+// 		<div class="row">
+// 			<div class="col-12">
+// 				<h2 class="headline">Features</h2>
+				
+// 				{% for feature in features %}
+// 				<div class="features-list--item">
+// 					<h3 class="feature-title">{{feature.title}}</h3>
+// 					<p class="feature-description">{{feature.description}}</p>
+// 				</div>
+// 				{% endfor %}
+// 			</div>
+// 		</div>
+// 	</div>
+// </section>
+
+.features-list {
+
+  .headline {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &--wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &--item {
+    margin-bottom: 30px;
+
+    @include breakpoint(md, 'max') {
+      text-align: center;
+    }
+    
+    @include breakpoint(md) {
+      display: flex;
+      margin-bottom: 15px;
+    }
+
+    .feature-title {
+      color: $green;
+      margin-bottom: 0;
+      
+      @include breakpoint(md) {
+        width: 240px;
+        margin-right: 25px;
+        text-align: right;
+      }
+
+      @include breakpoint(lg) {
+        width: 300px;
+        margin-right: 40px;
+      }
+      
+      @include breakpoint(lg, 'max') {
+        font-size: 24px;
+      }
+    }
+
+    .feature-description {
+      margin-bottom: 0;
+      
+      @include breakpoint(md) {
+        width: 480px;
+      }
+    }
+  }
+}

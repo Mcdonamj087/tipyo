@@ -1,0 +1,196 @@
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+
+{% include "partials/header.html" %}
+
+<!-- Image Text Hero Component -->
+<section class="text-image-hero hospitality-companies section-padding">
+	<div class="container">
+		<div class="row">
+			<div class="col">
+
+				<div class="text-image-hero--content">
+					<h1 class="headline display">Hospitality Companies</h1>
+					<p class="subhead largest">TipYo provides a safe and secure way for travelers to tip your associates from the convenience of their phones and integrates with your associate management and payroll systems.
+				</div>
+
+			</div>
+		</div>
+	</div>	
+
+	<div class="text-image-hero--image-wrap">
+		<img src="images/housekeeper-cleaning-hotel-room.jpg" alt="Hotel staff cleaning a room" />
+	</div>
+</section>
+<div class="text-image-hero--post-spacer"></div>
+<!-- End Image Text Hero Component -->
+
+<!-- How It Works Component -->
+<section class="how-it-works section-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-10 offset-lg-1 text-content">
+        <h2 class="headline">How it Works</h2>
+        <p class="subhead large">Our solution provides you with a valuable human resource tool for your associates by allowing guests to leave a tip based on the service they received rather than the amount of cash in their wallet.</p>
+			</div>
+		</div>
+		<div class="row how-it-works--item-wrapper">
+			<img class="how-it-works--arrows-desktop" src="svg/how-it-works--arrows-desktop.svg" alt="Arrows" />
+			<img class="how-it-works--dollar-1" src="svg/how-it-works--dollar.svg" alt="Money">
+			<img class="how-it-works--dollar-2" src="svg/how-it-works--dollar.svg" alt="Money">
+      <div class="col-md-4">
+				<div class="how-it-works--item">
+					<h3 class="how-it-works--title">Travelers</h3>
+					<img class="how-it-works--image" src="svg/how-it-works--your-phone.svg" alt="Phone Illustration">
+					<p class="how-it-works--subhead">Traveler sends tip from the TipYo app</p>
+				</div>
+      </div>
+      <div class="col-md-4">
+				<div class="how-it-works--item middle">
+					<h3 class="how-it-works--title">Hospitality Partner</h3>
+					<img class="how-it-works--image" src="svg/how-it-works--property.svg" alt="Building Illustration">
+					<p class="how-it-works--subhead">Tips are deposited into your account; TipYo matches tips via service staff reports and then tips are disbursed to associate through payroll.</p>
+				</div>
+			</div>
+      <div class="col-md-4">
+				<div class="how-it-works--item last">
+					<h3 class="how-it-works--title">Associates</h3>
+					<img class="how-it-works--image" src="svg/how-it-works--service-staff.svg" alt="Staff Illustration">
+					<p class="how-it-works--subhead">Associate receives tip in paycheck</p>
+				</div>
+			</div>
+    </div>
+  </div>
+</section>
+<!-- End How It Works -->
+
+<!-- Comparison Table Plank -->
+<section class="comparison-table-plank section-padding">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h2 class="headline">TipYo Versus Other Mobile Platforms</h2>
+			</div>
+			<div class="col">
+				<div class="comparison-table-plank--table-wrap">
+					<div class="comparison-table-plank--table-col bullet-points">
+						<div class="column-head"></div>
+						<div class="comparison-table-plank--table-row">
+							<p>Protects Guests Identity</p>
+						</div>
+						<div class="comparison-table-plank--table-row">
+							<p>Protects Associate Identity</p>
+						</div>
+						<div class="comparison-table-plank--table-row">
+							<p>Payment Flows to Associate's Paycheck</p>
+						</div>
+						<div class="comparison-table-plank--table-row">
+							<p>Associate and Guest Account Not Needed</p>
+						</div>
+					</div>
+					<div class="comparison-table-plank--table-col compare-col emphasize">
+						<div class="column-head">
+							<img class="logo" src="svg/tipyo-logo-green.svg" alt="TipYo Logo">
+						</div>
+						<div class="comparison-table-plank--table-row">
+							<img class="icon" src="svg/check-circle.svg">
+						</div>
+						<div class="comparison-table-plank--table-row">
+							<img class="icon" src="svg/check-circle.svg">
+						</div>
+						<div class="comparison-table-plank--table-row">
+							<img class="icon" src="svg/check-circle.svg">
+						</div>
+						<div class="comparison-table-plank--table-row">
+							<img class="icon" src="svg/check-circle.svg">
+						</div>
+					</div>
+					<div class="comparison-table-plank--table-col compare-col">
+						<div class="column-head">
+							<h3 class="competitor-name">Paypal</h3>
+						</div>
+						<div class="comparison-table-plank--table-row">
+							<img class="icon" src="svg/x-circle.svg">
+						</div>
+						<div class="comparison-table-plank--table-row">
+							<img class="icon" src="svg/x-circle.svg">
+						</div>
+						<div class="comparison-table-plank--table-row">
+							<img class="icon" src="svg/x-circle.svg">
+						</div>
+						<div class="comparison-table-plank--table-row">
+							<img class="icon" src="svg/x-circle.svg">
+						</div>
+					</div>
+					<div class="comparison-table-plank--table-col compare-col">
+						<div class="column-head">
+							<h3 class="competitor-name">Venmo</h3>
+						</div>
+						<div class="comparison-table-plank--table-row">
+							<img class="icon" src="svg/x-circle.svg">
+						</div>
+						<div class="comparison-table-plank--table-row">
+							<img class="icon" src="svg/x-circle.svg">
+						</div>
+						<div class="comparison-table-plank--table-row">
+							<img class="icon" src="svg/x-circle.svg">
+						</div>
+						<div class="comparison-table-plank--table-row">
+							<img class="icon" src="svg/x-circle.svg">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End Comparison Table Plank -->
+
+<!-- Features List Plank -->
+<section class="features-list section-padding">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h2 class="headline">Features</h2>
+				<div class="features-list--wrapper">
+					{% for feature in features %}
+					<div class="features-list--item">
+						<h3 class="feature-title">{{feature.title}}</h3>
+						<p class="feature-description">{{feature.description}}</p>
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End Features List Plank -->
+
+<!-- Getting Started Plank -->
+<section class="getting-started-plank section-padding">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h2 class="headline">Getting Started is Easy</h2>
+			</div>
+			{% for step in gettingStarted %}
+			<div class="col-sm-6 col-md-4">
+				<div class="getting-started-plank--step-wrapper {% if loop.index == 6 %}last{% endif %}">
+					<h3 class="getting-started-plank--step-number">{{loop.index}}</h3>
+					<p class="getting-started-plank--description">{{step}}</p>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>
+<!-- End Getting Started Plank -->
+
+
+
+{% include "partials/two-column-contact.html" %}
+
+{% include "partials/footer.html" %}
+	
+{% endblock %}

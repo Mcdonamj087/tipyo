@@ -1,0 +1,84 @@
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+
+{% include "partials/header.html" %}
+
+<!-- Image Text Hero Component -->
+<section class="text-image-hero travelers section-padding">
+	<div class="container">
+		<div class="row">
+			<div class="col">
+
+				<div class="text-image-hero--content">
+					<h1 class="headline display">Travelers</h1>
+					<p class="subhead largest">No cash to tip service staff? TipYo is a secure mobile tipping App that allows you to tip service staff from your phone at participating locations.<br/><br/>
+						Download the app today!</p>
+					<div class="app-store-btns">
+						<a href="#" title="App Store">
+							<img src="svg/appstore-badge.svg" alt="Download TipYo on Apple App Store">
+						</a>
+						<a href="#" title="Google Play Store">
+							<img src="svg/google-play-badge.svg" alt="Download TipYo on Apple App Store">
+						</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>	
+
+	<div class="text-image-hero--image-wrap">
+		<img src="images/man-and-woman-riding-vespa.jpg" alt="Travelers riding a vespa" />
+	</div>
+</section>
+<div class="text-image-hero--post-spacer"></div>
+<!-- End Image Text Hero Component -->
+
+<!-- How It Works Component -->
+<section class="how-it-works section-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-10 offset-lg-1 text-content">
+        <h2 class="headline">How it Works</h2>
+        <p class="subhead large">We partner with hotels, parking garages and restaurants to provide travelers convenience and service staff a way to receive your recognition via electronic tips. 100% of your tip goes to staff and there is no cost to you.</p>
+			</div>
+		</div>
+		<div class="row how-it-works--item-wrapper">
+			<img class="how-it-works--arrows-desktop" src="svg/how-it-works--arrows-desktop.svg" alt="Arrows" />
+			<img class="how-it-works--dollar-1" src="svg/how-it-works--dollar.svg" alt="Money">
+			<img class="how-it-works--dollar-2" src="svg/how-it-works--dollar.svg" alt="Money">
+      <div class="col-md-4">
+				<div class="how-it-works--item">
+					<h3 class="how-it-works--title">Your Phone</h3>
+					<img class="how-it-works--image" src="svg/how-it-works--your-phone.svg" alt="Phone Illustration">
+					<p class="how-it-works--subhead">You send a tip via the TipYo App</p>
+				</div>
+      </div>
+      <div class="col-md-4">
+				<div class="how-it-works--item middle">
+					<h3 class="how-it-works--title">Property</h3>
+					<img class="how-it-works--image" src="svg/how-it-works--property.svg" alt="Building Illustration">
+					<p class="how-it-works--subhead">Property processes tips in payroll</p>
+				</div>
+			</div>
+      <div class="col-md-4">
+				<div class="how-it-works--item last">
+					<h3 class="how-it-works--title">Service Staff</h3>
+					<img class="how-it-works--image" src="svg/how-it-works--service-staff.svg" alt="Staff Illustration">
+					<p class="how-it-works--subhead">Staff receives tip in their paycheck</p>
+				</div>
+			</div>
+    </div>
+  </div>
+</section>
+<!-- End How It Works -->
+
+{% include "partials/mobile-card-switcher.component.html" %}
+
+
+{% include "partials/contact-plank.html" %}
+
+{% include "partials/footer.html" %}
+	
+{% endblock %}

@@ -1,0 +1,152 @@
+/**********************************************
+ How It Works Component Styles
+**********************************************/
+.how-it-works {
+
+  .text-content {
+    text-align: center;
+    margin-bottom: 30px;
+
+    @include breakpoint(md) {
+      margin-bottom: 40px;
+    }
+
+    @include breakpoint(lg) {
+      margin-bottom: 60px;
+    }
+  }
+
+  &--item-wrapper {
+    position: relative;
+
+    > div {
+      text-align: center;
+    }
+  }
+
+  &--item{
+
+    &:not(.last) {
+      position: relative;
+
+      @include breakpoint(md, 'max') {
+        &:after,
+        &:before {
+          content: '';
+          display: block;
+        }
+
+        &:before {
+          position: absolute;
+          border-bottom: 20px solid $dark-tan;
+          border-left: 20px solid transparent;
+          left: 50%;
+          bottom: -9px;
+          transform: rotate(45deg) translateX(-70%);
+        }
+        
+        &:after {
+          height: 80px;
+          width: 3px;
+          background-image: linear-gradient(to bottom, $dark-tan 50%, transparent 50%);
+          background-repeat: repeat-y;
+          background-size: 10px 13px;
+          margin: 30px auto;
+        }
+      }
+      
+      @include breakpoint(md) {
+        margin: 0;
+      }
+    }
+
+    &:not(.middle) {
+
+      @include breakpoint(lg) {
+        padding-top: 50px;
+      }
+
+      @include breakpoint(xl) {
+        padding-top: 70px;
+      }
+    }
+  }
+
+  &--image {
+    margin-bottom: 10px;
+  }
+
+  &--subhead {
+    margin: 0;
+  }
+
+  &--arrows-desktop,
+  &--dollar-1,
+  &--dollar-2 {
+    position: absolute;
+  }
+  
+  &--arrows-desktop {
+    display: none;
+
+    @include breakpoint(lg) {
+      display: block;
+      width: 505px;
+      top: 105px;
+      left: 203px;
+    }
+
+    @include breakpoint(xl) {
+      left: 255px;
+      width: 600px;
+    }
+  }
+
+  &--dollar-1 {
+
+    @include breakpoint(md) {
+      transform: rotate(-11.5deg);
+    }
+
+    @include breakpoint(lg) {
+      left: 278px;
+      top: 112px;
+    }
+
+    @include breakpoint(xl) {
+      left: 330px;
+      top: 120px;
+    }
+  }
+
+  &--dollar-2 {
+
+    @include breakpoint(md) {
+      transform: rotate(11.5deg);
+    }
+
+    @include breakpoint(lg) {
+      left: 598px;
+      top: 113px;
+    }
+
+    @include breakpoint(xl) {
+      left: 721px;
+      top: 116px;
+    }
+  }
+
+  &--dollar-1,
+  &--dollar-2 {
+    display: none;
+
+    @include breakpoint(lg) {
+      display: block;
+      width: 60px;
+    }
+
+    @include breakpoint(xl) {
+      width: unset;
+    }
+  }
+}
